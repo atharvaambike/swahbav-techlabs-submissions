@@ -1,0 +1,53 @@
+Project Type :
+Mini Project
+Problem Statement: Banking Application Development
+Overview
+The objective is to develop a robust web-based banking application that facilitates the secure management of user accounts and transactions. The application will serve two types of users: Administrators (Admins) and Customers. Admins will have the ability to manage user accounts and view transaction details, while Customers will be able to conduct financial transactions and view their transaction history through an online passbook.
+
+Functional Requirements
+User Login and Logout:
+
+Users must be able to log in to their respective accounts using a username and password.
+The system should provide a secure logout mechanism.
+Session Management:
+
+User sessions must be managed securely, with a timeout feature that automatically logs out users after a period of inactivity.
+User Roles:
+
+Two distinct roles are required:
+Admin: Can create, read, update, and delete (CRUD) user information, and view all transaction details across all accounts.
+Customer: Can perform financial transactions such as transfers and view their own transaction history.
+Financial Transactions (Customers only):
+
+Customers should be able to transfer funds between accounts within the bank.
+Each transaction must be recorded and stored in the transaction history.
+Transaction History (Passbook):
+
+Customers should be able to view a list of their transactions over a specified date range through an interface termed as "Passbook."
+The passbook should display details such as the date, type of transaction, and amount.
+Admin Dashboard:
+
+Admins should have access to a dashboard where they can view and manage all registered users and their transaction histories.
+Non-Functional Requirements
+Security:
+
+User authentication will be managed via session tokens.
+Sensitive data such as user passwords will be stored using simple hashing (considering the exclusion of Bcrypt for this project).
+The system should prevent SQL injection and other common security vulnerabilities.
+Usability:
+
+The interface should be user-friendly, allowing easy navigation between different functionalities.
+Responsive design to ensure the application is accessible on various devices including desktops, tablets, and smartphones.
+Performance:
+
+The application should handle multiple users simultaneously without significant delays.
+Efficient query processing for transaction and account management functionalities.
+Reliability:
+
+The system should ensure data integrity and consistency across all transactions.
+Proper error handling mechanisms should be in place to manage any system failures.
+Technologies to be Used
+Front-end: HTML, CSS, JavaScript, JSP (JavaServer Pages)
+Back-end: Servlets, Java as the server-side language
+Database: MySQL for storing user and transaction data
+Server: Apache Tomcat as the web server
